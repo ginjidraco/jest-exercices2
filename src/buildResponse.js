@@ -14,6 +14,7 @@ export const buildResponse = async (
     }
     case `${status}` === `${STATUS_API.SUCCESS}`:
       if (config.blob) {
+        console.log(config.blob);
         return response.blob();
       }
       if (config.text) {
